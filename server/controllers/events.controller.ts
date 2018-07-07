@@ -8,7 +8,7 @@ router.get('/', (req: Request, res: Response) => {
 
 router.get('/:eventId', (req: Request, res: Response) => {
   let { eventId } = req.params
-  res.send(`This is event ${eventId}`)
+  res.send(`These are the matches for event ${eventId}`)
 })
 
 export const EventsController: Router = router;
